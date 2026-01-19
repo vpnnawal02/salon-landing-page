@@ -6,7 +6,9 @@ import whatsappIcon from "../assets/whatsapp_icon.png";
 const Hero = () => {
     return (
         <div className="min-h-screen w-full bg-cover bg-center relative"
-            style={{ backgroundImage: "url('/header-main.jpg')" }} id="home">
+            style={
+                { backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/header-main.jpg')` }
+            } id="home">
 
             <div className="flex justify-center">
                 <div className="text-center text-white w-[60%] mt-30 md:mt-100 xl:mt-70">

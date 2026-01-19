@@ -77,9 +77,9 @@ const NavigationBar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`absolute inset-0 bg-white backdrop-blur-md transition-transform duration-300 md:hidden 
-        ${showMobileMenu ? "translate-x-0" : "translate-x-full"} h-screen`}
-      >
+        className={`fixed top-0 right-0 w-full h-screen bg-white backdrop-blur-md transition-transform duration-300 md:hidden z-50
+${showMobileMenu ? "translate-x-0" : "translate-x-full"}`}>
+
         <div className="flex justify-end p-6">
           <button onClick={() => setShowMobileMenu(false)}>
             <img src={menuIcon} alt="close" className="w-6 rotate-180" />
