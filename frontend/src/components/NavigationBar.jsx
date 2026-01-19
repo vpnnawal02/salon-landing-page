@@ -41,7 +41,7 @@ const NavigationBar = () => {
           onClick={() => handleNavigation({ id: "home" })}
           className="text-3xl lg:text-4xl font-bold"
         >
-          SALON
+          SALON<span className="text-blue-500 text-4xl">.</span>
         </button>
 
         {/* Desktop Menu */}
@@ -50,7 +50,7 @@ const NavigationBar = () => {
             <li key={item.label}>
               <button
                 onClick={() => handleNavigation(item)}
-                className="hover:text-gray-400 transition duration-200 cursor-pointer"
+                className="hover:text-blue-500 transition duration-100 cursor-pointer hover:underline underline-offset-25 decoration-5"
               >
                 {item.label}
               </button>
@@ -77,7 +77,7 @@ const NavigationBar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 bg-white/95 backdrop-blur-md transition-transform duration-300 md:hidden
+        className={`absolute inset-0 bg-white backdrop-blur-md transition-transform duration-300 md:hidden 
         ${showMobileMenu ? "translate-x-0" : "translate-x-full"} h-screen`}
       >
         <div className="flex justify-end p-6">
@@ -100,9 +100,12 @@ const NavigationBar = () => {
         </ul>
 
         <div className="flex justify-center mt-10">
-          <button className="bg-blue-500 px-8 py-3 rounded-full text-white hover:bg-blue-400 transition">
-            Make an Appointment
-          </button>
+          <a href="/book-appointment">
+            <button className="bg-blue-500 px-8 py-3 rounded-full text-white hover:bg-blue-400 transition">
+              Make an Appointment
+            </button>
+          </a>
+
         </div>
       </div>
     </nav>

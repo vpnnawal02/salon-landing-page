@@ -11,6 +11,11 @@ const Hero = () => {
             <div className="flex justify-center">
                 <div className="text-center text-white w-[60%] mt-30 md:mt-100 xl:mt-70">
                     <h1 className="font-extrabold text-4xl sm:text-4xl md:text-6xl lg:text-6xl">An Experience Where Style, Comfort, and Confidence Come Together.</h1>
+                    <h1 className="font-extrabold text-4xl sm:text-4xl md:text-6xl lg:text-6xl">
+                        <div style={{ fontFamily: "'Source Sans 3', sans-serif" }}>
+                            Test text.
+                        </div>
+                    </h1>
                 </div>
             </div>
         </div>

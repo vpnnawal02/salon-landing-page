@@ -13,12 +13,12 @@ import Hero from "./components/Hero"
 import NavigationBar from "./components/NavigationBar"
 import BookAppointment from "./pages/BookAppointement"
 import InquiryForm from "./pages/InquiryForm"
+import ScrollToTopButton from "./components/ScrollToTopButton"
 
 function App() {
   return (
     <>
       <Header />
-
       <Routes>
         {/* Home Page */}
         <Route
@@ -42,7 +42,7 @@ function App() {
         {/* Inquiry Form */}
         <Route path="/inquiry" element={<InquiryForm />} />
       </Routes>
-
+      <ScrollToTopButton />
       <Footer />
     </>
   )
