@@ -93,7 +93,7 @@ const Gallery = () => {
                             />
 
                             {/* Overlay */}
-                            <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition" />
+                            <div className="absolute inset-0 bg-black/30 opacity-0 transition" />
                         </div>
                     ))}
                 </div>

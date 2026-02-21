@@ -52,7 +52,7 @@ const NavigationBar = () => {
               <li key={item.label}>
                 <button
                   onClick={() => handleNavigation(item)}
-                  className="hover:text-blue-500 transition hover:underline underline-offset-8"
+                  className="hover:text-blue-500 transition hover:underline decoration-5 underline-offset-26 cursor-pointer"
                 >
                   {item.label}
                 </button>
